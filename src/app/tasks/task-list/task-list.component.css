@@ -1,0 +1,11 @@
+.task-item {
+    display: flex;
+    flex-direction: column;
+    align-items:left;
+    background-color: #111616;
+    color: rgba(255, 255, 255, 0.418);
+}
+
+h2 {
+    color: #d830ee;
+}

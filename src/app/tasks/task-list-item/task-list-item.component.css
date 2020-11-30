@@ -1,0 +1,23 @@
+.task-completed {
+    text-decoration: line-through;
+}
+
+.task-description {
+    flex-grow: 1;
+}
+
+#butoes {
+    display: flex;
+    flex-direction: row;
+    align-items:left;
+}
+
+.editar {
+    background-color: #d830ee;
+    color:#000;
+}
+
+.remover {
+    background-color: #000000;
+    color: #d830ee;
+}

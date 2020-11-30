@@ -1,0 +1,14 @@
+<div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" [(ngModel)]="task.completed" (change)="onCompletedChange(task)"/>
+</div>
+<div [innerHTML]="task.today"  class="task-item-description" [ngClass]="task.completed ? 'task-completed' : ''"></div>
+<div [innerHTML]="task.title" class="task-item-description" [ngClass]="task.completed ? 'task-completed' : ''"></div>
+<div [innerHTML]="task.description" class="task-item-description" [ngClass]="task.completed ? 'task-completed' : ''"></div>
+<div [innerHTML]="task.setDate" class="task-item-description" [ngClass]="task.completed ? 'task-completed' : ''"></div>
+<div id=butoes>
+<div>
+    <button type="button" [routerLink]="['/editar', task.id]" class="btn editar mr-1">Editar</button>
+</div>
+<div>
+    <button type="button" class="btn remover" (click)="remove(task)">Excluir</button>
+</div></div>
