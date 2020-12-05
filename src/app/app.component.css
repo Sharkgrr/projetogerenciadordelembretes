@@ -3,18 +3,23 @@ header {
 }
 
 .navbar {
-    background-color: #D200EE;
-    /* #BF0B3B, #AE1B2E, #D34865, #00D7C2 */
+    background-color: #26A69A ;
+    /* #BF0B3B, #AE1B2E, #D34865, #00D7C2, #37DB86, #2DA7BA */
+    padding: 7.5px;
+}
+
+.aaa {
+    font-size: 10px;
 }
 
 a {
     text-decoration: none;
-    color: #d830ee;
 }
 
 #fundo {
     position: fixed; /* posição fixa para que a possível rolagem da tela não revele espaços em branco */
     width: 100%;
     height: 100%;
-    background-color: #182526;
+    /* background-color: #182526; */
+    background: #FFFFFF url("../../pics/fundo_7.jpg");
 }

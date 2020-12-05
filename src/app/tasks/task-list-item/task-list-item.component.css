@@ -1,5 +1,7 @@
 .task-completed {
     text-decoration: line-through;
+    text-decoration-color: #990106;
+    text-decoration-style: double;
 }
 
 .task-description {
@@ -13,11 +15,15 @@
 }
 
 .editar {
-    background-color: #d830ee;
-    color:#000;
+    background-color: #26A69A;
+    color:#DEFFFF;
 }
 
 .remover {
     background-color: #000000;
-    color: #d830ee;
+    color: #DEFFFF;
+}
+
+#fontes {
+    color: #DEFFFF;
 }

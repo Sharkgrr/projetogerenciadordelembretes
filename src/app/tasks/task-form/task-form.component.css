@@ -1,3 +1,24 @@
 h2 {
-    color: #d830ee;
+    color: #26A69A;
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+
+.salvar {
+    background-color: #26A69A;
+    color:#DEFFFF;
+}
+
+.cancelar {
+    background-color: #000000;
+    color: #DEFFFF;
+}
+
+#tudo {
+    display: block;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 100px;
+    background-color: #111616;
+    padding: 40px 40px 40px 40px;
 }

@@ -1,3 +1,4 @@
+<div id="tudo">
 <h2> {{title}} </h2>
 <hr/>
 
@@ -18,7 +19,8 @@
             <input type="datetime-local" [(ngModel)]="task.setDate" name="setDate" placeholder="ver isso tbm" rows="1" class="form-control">
         </div>
         
-        <button type="submit" class="btn btn-primary mr-2"> Salvar </button>
-        <button type="button" class="btn btn-secondary" [routerLink]="['/lembretes']"> Cancelar </button>
+        <button type="submit" class="btn salvar mr-2"> <b>Salvar </b></button>
+        <button type="button" class="btn cancelar" [routerLink]="['/lembretes']"> <b>Cancelar </b></button>
     </form>
 </section>
+</div>
