@@ -1,6 +1,7 @@
 import { Router } from '@angular/router';
 import { Injectable } from '@angular/core';
 import { Usuario } from './usuario';
+import { Campos } from '.././cadastro/campos';
 
 @Injectable({
   providedIn: 'root'
@@ -8,6 +9,7 @@ import { Usuario } from './usuario';
 export class AuthService {
 
   private usuarioAutenticado: boolean = false;
+  private camposAutenticado: boolean = false;
 
   constructor(private router: Router) { }
 
@@ -19,6 +21,17 @@ export class AuthService {
     } 
     else {
       this.usuarioAutenticado = false;
+      alert("Deu ruim");
+    }
+  }
+
+  fazerCadastro(campos: Campos) {
+    if(campos.nome != "" && campos.email != "" && campos.senha != "" && campos.reSenha != "") {
+      this.camposAutenticado = true;
+      this.router.navigate([''])
+    }
+    else {
+      this.camposAutenticado = false;
       alert("Deu ruim");
     }
   }

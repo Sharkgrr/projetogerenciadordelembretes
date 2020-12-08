@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from '.././login/auth.service';
+import { Campos } from './campos';
 
 @Component({
   selector: 'app-cadastro',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CadastroComponent implements OnInit {
 
-  constructor() { }
+  private campos: Campos = new Campos();
 
-  ngOnInit(): void {
+  constructor(private authService: AuthService) { }
+
+  ngOnInit() {
   }
 
+  fazerCadastro() {
+    this.authService.fazerCadastro(this.campos);
+  }
 }
