@@ -12,13 +12,14 @@ export class AuthService {
   constructor(private router: Router) { }
 
   fazerLogin(usuario: Usuario){
-    if(usuario.nome === 'usuario@email.com' && usuario.senha ==='123456') {
+    if(usuario.nome === 'gui@email.com' && usuario.senha ==='123456') {
       this.usuarioAutenticado = true;
-
       this.router.navigate(['/lembretes'])
-
-    } else {
+      alert("Sucesso");
+    } 
+    else {
       this.usuarioAutenticado = false;
+      alert("Deu ruim");
     }
   }
 }
